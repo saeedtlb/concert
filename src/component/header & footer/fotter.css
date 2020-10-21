@@ -1,0 +1,19 @@
+.fotter_bck {
+  height: 200px;
+  background-color: rgb(212, 58, 31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fotter_txt h1,
+.fotter_txt p {
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+}
+.fotter_txt h1 {
+  font-weight: bold;
+  font-size: 46px;
+  word-spacing: 10px;
+  margin-bottom: 0;
+}

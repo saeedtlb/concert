@@ -1,0 +1,51 @@
+.highlight_text h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 54px;
+}
+.highlight_text p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 36px 0;
+  line-height: 1.4em;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+/*******************BUY************************/
+
+.purchase_ticket {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px;
+}
+.ticket {
+  grid-column: 2/4;
+  height: 100%;
+}
+.ticket h1 {
+  text-transform: capitalize;
+  margin-top: 0;
+}
+.ticket p {
+  text-align: justify;
+  line-height: 1.4em;
+}
+.percentage {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+.percentage .container {
+  display: flex;
+  flex-direction: column;
+}
+.percentage span:first-child {
+  font-size: 6rem;
+  color: orangered;
+}
+.percentage span:last-child {
+  font-size: 36px;
+  font-style: italic;
+}

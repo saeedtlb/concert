@@ -1,0 +1,35 @@
+.images {
+  position: relative;
+  display: flex;
+}
+.comment {
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #fff;
+  padding: 16px 32px;
+  border: 3px double #fff;
+}
+.countDown {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  left: 10px;
+  z-index: 2;
+  width: 30%;
+  height: 10%;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+.countDown > div {
+  align-self: center;
+  text-align: center;
+  font-size: 36px;
+  width: 100%;
+}
+.countDown span {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+}

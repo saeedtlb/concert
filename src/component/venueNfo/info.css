@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #464545;
+  height: 60vh;
+}
+.info .container {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  height: 60%;
+}
+.info .events {
+  color: rgb(221, 220, 220);
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0 20px;
+  border: 3px solid #706f6f;
+  position: relative;
+}
+.info .icon_bck {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 1;
+  position: relative;
+}
+.info .date_icon {
+  background-color: tomato;
+}
+.info .location_icon {
+  background-color: orange;
+}
+.info .icon_bck::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.info .date_icon::before {
+  background: url('../../resource/icons/calendar.png') no-repeat;
+  background-size: contain;
+}
+.info .location_icon::before {
+  background: url('../../resource/icons/location.png') no-repeat;
+  background-size: contain;
+}
+
+.info .events::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 8px;
+  border: inherit;
+}
+.info .events h1 {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #646363;
+  white-space: nowrap;
+}
+.info .events p {
+  font-size: 32px;
+  margin-top: 0;
+}
